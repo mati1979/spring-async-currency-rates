@@ -1,0 +1,19 @@
+{namespace soy.example}
+
+/**
+ * Index page
+ * @param entryList
+ */
+{template .index}
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Spring Async Example</title>
+</head>
+<body>
+    {foreach $currencyEntry in $entryList}
+        1 {$currencyEntry.symbol} ({$currencyEntry.desc}) - {$currencyEntry.rate} EUR<br>
+    {/foreach}
+</body>
+</html>
+{/template}
