@@ -17,7 +17,7 @@ public class WebAppInit extends AbstractAnnotationConfigDispatcherServletInitial
 
     @Override
     protected Class<?>[] getServletConfigClasses() {
-        return new Class[]{ SoyConfiguration.class };
+        return new Class[]{ AppConfiguration.class };
     }
 
     @Override

@@ -57,7 +57,6 @@ public class CurrencyAsyncController2 {
 
         });
 
-        //final ListenableFuture<Map<String,Map>> names = asyncHttpClient.prepareGet("https://gist.github.com/Fluidbyte/2973986/raw/9ead0f85b6ee6071d018564fa5a314a0297212cc/Common-Currency.json").execute(new AsyncCompletionHandler<Map<String,Map>>() {
         final ListenableFuture<Map<String,Map>> names = asyncHttpClient.prepareGet("http://www.localeplanet.com/api/auto/currencymap.json?name=Y").execute(new AsyncCompletionHandler<Map<String,Map>>() {
 
             @Override
